@@ -12,7 +12,6 @@ PATCH /incidents/{id} — обновить статус инцидента
 ## Быстрый старт (Docker Compose)
 ```bash
 docker compose up -d
-docker compose exec incident_api alembic revision --autogenerate -m "init" 
 docker compose exec incident_api alembic upgrade head
 ```
 http://localhost:8000/docs
